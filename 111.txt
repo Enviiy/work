@@ -1,0 +1,15 @@
+python -m venv .venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\.venv\Scripts\activate
+pip install pyTelegramBotAPI
+
+
+powershell -ExecutionPolicy Bypass -NoExit -Command "& '.\venv\Scripts\Activate.ps1'"
+
+или
+
+powershell -ExecutionPolicy Bypass -NoExit -Command "& '.\venv\Scripts\activate'"
+
+или 
+
+powershell -ExecutionPolicy Bypass -NoExit -Command "& '.\.venv\Scripts\activate'"
